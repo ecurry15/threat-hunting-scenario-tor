@@ -43,7 +43,7 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Searched the DeviceProcessEvents table for activity that included the file name `"tor-browser-windows-x86_64"`. Based on the logs returned at `2025-11-03T02:58:19.7881619Z`, a user used the command line to run `“tor-browser-windows-x86_64-portable-15.0.exe /S”` from their downloads folder.
+Searched the `DeviceProcessEvents` table for activity that included the file name `"tor-browser-windows-x86_64"`. Based on the logs returned at `2025-11-03T02:58:19.7881619Z`, a user used the command line to run `“tor-browser-windows-x86_64-portable-15.0.exe /S”` from their downloads folder.
 
 
 **Query used to locate event:**
