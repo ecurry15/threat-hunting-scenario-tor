@@ -100,8 +100,7 @@ DeviceNetworkEvents
 
 ### 1. User downloaded the Tor installer and created related files
 
-- File activity showed Tor-related files being generated, including “tor-shopping-list.txt.”
-- The user later deleted the Tor browser and associated files.
+- File activity showed Tor-related files being generated.
 - **Time:** 2025-11-03T02:57:40.1684141Z
 - **Source:** DeviceFileEvents — search for files starting with “tor”
 
