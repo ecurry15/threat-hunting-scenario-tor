@@ -38,7 +38,6 @@ DeviceFileEvents
 ```
 <img width="1872" height="809" alt="image" src="https://github.com/user-attachments/assets/7a5383a5-7daf-4799-a1df-99f73425b9df" />
 
-">
 
 ---
 
@@ -57,7 +56,8 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, ProcessCommandLine, AccountName
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+<img width="1906" height="319" alt="image" src="https://github.com/user-attachments/assets/1f9860aa-29a1-4c5a-84c7-605d287fbc64" />
+
 
 ---
 
@@ -73,7 +73,8 @@ DeviceProcessEvents
 | where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe")
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="1888" height="918" alt="image" src="https://github.com/user-attachments/assets/a00b3840-ecd7-40f6-a137-eabb2f1107ea" />
+
 
 ---
 
@@ -90,7 +91,8 @@ DeviceNetworkEvents
 | order by Timestamp desc 
 | where RemotePort in ("9001", "9030", "9040", "9050", "9051", "9150")
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
+<img width="1903" height="558" alt="image" src="https://github.com/user-attachments/assets/42f646f9-cad9-4de9-b26d-c2593e17c011" />
+
 
 ---
 
