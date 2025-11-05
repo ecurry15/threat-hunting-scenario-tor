@@ -6,7 +6,7 @@
 2. Install it silently: ```tor-browser-windows-x86_64-portable-14.0.1.exe /S```
 3. Opens the TOR browser from the folder on the desktop
 4. Connect to TOR and browse a few sites.
-5. Create a folder on your desktop called ```tor-shopping-list.txt``` and put a few fake (illicit) items in there
+5. Create a file on your desktop called ```tor-shopping-list.txt``` and put a few fake (illicit) items in there
 6. Delete the file and delete tor.
 
 ---
