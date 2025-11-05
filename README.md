@@ -145,12 +145,15 @@ DeviceNetworkEvents
 
 ## Summary
 
-The user "employee" on the "threat-hunt-lab" device initiated and completed the installation of the TOR browser. They proceeded to launch the browser, establish connections within the TOR network, and created various files related to TOR on their desktop, including a file named `tor-shopping-list.txt`. This sequence of activities indicates that the user actively installed, configured, and used the TOR browser, likely for anonymous browsing purposes, with possible documentation in the form of the "shopping list" file.
+An investigation into device Ecurry-ThreatHu revealed that a user downloaded, installed, and briefly used the Tor Browser before deleting it. File activity began at 2025-11-03T02:57:40Z, when the user downloaded a Tor installer and created related files, including one named “tor-shopping-list.txt.” Shortly afterward, at 02:58:19Z, the user ran the Tor Browser installer from the command line, confirming a deliberate installation.
+
+At 03:02:48Z, logs showed that the Tor Browser was launched, and less than a minute later, at 03:03:25Z, the process tor.exe established a successful outbound network connection to 150.136.142.129 on port 9001, consistent with Tor network traffic. Additional evidence showed visits to hidden service URLs. Following this activity, the user deleted the Tor Browser and its associated files, indicating an attempt to remove traces of use.
+
 
 ---
 
 ## Response Taken
 
-TOR usage was confirmed on the endpoint `threat-hunt-lab` by the user `employee`. The device was isolated, and the user's direct manager was notified.
+TOR usage was confirmed on endpoint `Ecurry-ThreatHunt-Lab`. The device was isolated, and the user's direct manager was notified.
 
 ---
