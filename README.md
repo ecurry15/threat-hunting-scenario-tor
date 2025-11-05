@@ -112,36 +112,35 @@ DeviceNetworkEvents
 - **Time:** 2025-11-03T02:58:19.7881619Z
 - **Source:** DeviceProcessEvents — search for “tor-browser-windows-x86_64”
 
-### 3. Process Execution - TOR Browser Launch
+### 3. User launched the Tor Browser
 
-- **Timestamp:** `2024-11-08T22:17:21.6357935Z`
-- **Event:** User "employee" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
-- **Action:** Process creation of TOR browser-related executables detected.
-- **File Path:** `C:\Users\employee\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
+- Evidence confirmed that tor.exe / firefox.exe / tor-browser.exe processes were initiated.
+- **Time:** 2025-11-03T03:02:48.1472833Z
+- **Source:** DeviceProcessEvents — search for Tor-related executables
+- **File Path:** `c:\users\ecurry3015\desktop\tor browser\browser\torbrowser\tor\tor.exe`
 
-### 4. Network Connection - TOR Network
+### 4. User established a network connection through the Tor Browser
 
-- **Timestamp:** `2024-11-08T22:18:01.1246358Z`
-- **Event:** A network connection to IP `176.198.159.33` on port `9001` by user "employee" was established using `tor.exe`, confirming TOR browser network activity.
-- **Action:** Connection success.
+- Process tor.exe connected to remote IP `150.136.142.129` on `port 9001`.
+- **Time:** 2025-11-03T03:03:25.1090638Z
+- Logs also indicated visits to: `https://www[.]d4ayzdzictqww[.]com` and `https://www[.]xhgumv4z[.]com`
 - **Process:** `tor.exe`
-- **File Path:** `c:\users\employee\desktop\tor browser\browser\torbrowser\tor\tor.exe`
+- **Source:** DeviceNetworkEvents — filtered for Tor-related ports 9001–9150
+- **File Path:** `c:\users\ecurry3015\desktop\tor browser\browser\torbrowser\tor\tor.exe`
 
-### 5. Additional Network Connections - TOR Browser Activity
+### 5. File Creation - TOR Shopping List
+- The user created a file named `tor-shopping-list.txt`, potentially indicating a list or notes related to their TOR browser activities.
+- **Time:** `2025-11-03T03:15:08.9996518Z`
+- **Action:** File creation.
+- **File Path:** `C:\Users\ecurry3015\Documents\tor-shopping-list.txt`
 
-- **Timestamps:**
-  - `2024-11-08T22:18:08Z` - Connected to `194.164.169.85` on port `443`.
-  - `2024-11-08T22:18:16Z` - Local connection to `127.0.0.1` on port `9150`.
-- **Event:** Additional TOR network connections were established, indicating ongoing activity by user "employee" through the TOR browser.
-- **Action:** Multiple successful connections detected.
 
-### 6. File Creation - TOR Shopping List
+### 6. File/browser deletion.
 
-- **Timestamp:** `2024-11-08T22:27:19.7259964Z`
-- **Event:** The user "employee" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
-- **Action:** File creation detected.
-- **File Path:** `C:\Users\employee\Desktop\tor-shopping-list.txt`
-
+- The user attempted to erase evidence by deleting the Tor browser and its generated files, including the shopping list.
+- **Time:** `2025-11-03T03:16:17.6984709Z`
+- **Action:** File deletion.
+- **Source:** DeviceFileEvents — filter for files that include "tor”
 ---
 
 ## Summary
